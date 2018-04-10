@@ -1,0 +1,25 @@
+{
+  "name": "bugvrstudios",
+  "version": "2.0.0",
+  "description": "Next Generation or BugVrStudiosPortal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/luisrdz5/bugvrstudios.git"
+  },
+  "keywords": [
+    "bug",
+    "VR",
+    "AR",
+    "bugvrstudios"
+  ],
+  "author": "Luis Antonio Rodriguez Garcia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luisrdz5/bugvrstudios/issues"
+  },
+  "homepage": "https://github.com/luisrdz5/bugvrstudios#readme"
+}
