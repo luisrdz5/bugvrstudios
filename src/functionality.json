@@ -1,0 +1,101 @@
+{
+    "links": [
+      {
+        "id": "1",
+        "description": "Inicio",
+        "link": "/"
+      },
+      {
+        "id": "2",
+        "description": "Blog",
+        "link": "/blog"
+      },
+      {
+        "id": "3",
+        "description": "Portafolio",
+        "link": "/portafolio"
+      },
+      {
+        "id": "4",
+        "description": "Acerca de Nosotros",
+        "link": "/aboutus"
+      }
+    ],
+    "siteInfo": [
+      {
+        "id": "1",
+        "title":"BugVRStudios",
+        "info":" Somos un grupo de profesionales entusiastas especialistas en Realidad Virtual, Realidad aumentada y Realidad Mixta."
+      }
+    ],
+    "fastAccessLinks": [
+      {
+        "id":"1",
+        "title":"Desarrollo de Experiencias",
+        "link":"/"
+      },
+      {
+        "id":"2",
+        "title":"Contactanos",
+        "link":"/"
+      },
+      {
+        "id":"3",
+        "title":"Privacidad",
+        "link":"/"
+      }
+    ],
+    "socialNetworks": [{
+      "id":"1",
+      "title":"Redes Sociales",
+      "networks":[
+        {
+          "id":"1",
+          "link":"https://www.facebook.com/Bugvrstudios-1883871325207863/",
+          "text":"Bugvrstudios",
+          "classIcon": "fa fa-facebook-official fa-3"
+        },
+        {
+          "id":"2",
+          "link":"https://www.youtube.com/channel/UCAMQ_U-QdmoNIJdt9vSExUQ",
+          "text":"Bugvrstudios",
+          "classIcon": "fa fa-youtube-play fa-3"
+        },
+        {
+          "id":"3",
+          "link":"https://twitter.com/bugvrstudios",
+          "text":"@bugvrstudios",
+          "classIcon": "fa fa-twitter fa-3"
+        },
+        {
+          "id":"4",
+          "link":"https://www.instagram.com/bugvrstudios/",
+          "text":"bugvrstudios",
+          "classIcon": "fa fa-instagram fa-3"
+        }
+      ]
+    }],
+    "siteInformation":[
+      {
+        "id":"1",
+        "icon":"3d_rotation",
+        "title": "Realidad Virtual",
+        "information": "Es cuando la persona tiene una inmersión en un entorno de Escenas y objetos de aparencia real que son generados por Tecnologia."
+      },
+      {
+        "id":"2",
+        "icon":"smartphone",
+        "title": "Realidad Aumentada",
+        "information": "Es la visualización de un entorno real a travez de un dispositivo tecnologico (Actualmente Smartphones) en el cual se monta una realidad visual generada por la tecnologia. "
+      },
+      {
+        "id":"3",
+        "icon":"visibility",
+        "title": "Realidad Mixta",
+        "information": "Es la combinación de Realidad Virtual y Realidad Aumentada. Por medio de dispositivos se tiene la sensación de estar en el mundo real interactuando con objetos o personas generadas por tecnologia."
+      }
+
+
+    ]
+}
+ 
