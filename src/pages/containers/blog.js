@@ -12,13 +12,14 @@ import data from '../../functionality.json'
 class Home extends Component {
 
     render (){
+        console.log(this.props)
         return (
             <HandleError props={this.props}>
                 <HomeContainer>
                     <Header 
                         links={this.props.data.links}
                     /> 
-                    <Body data={this.props.data.siteInformation} />
+                    <p> Aqui va el Blog </p>
                     <Footer data={this.props.data} />
                 </HomeContainer>
             </HandleError>

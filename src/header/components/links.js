@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Links(props){
     return (
-                <li> <a href={props.link} >{props.description} </a> </li>     
+                <li> <Link to={props.link} >{props.description} </Link> </li>     
     )
 }
 export default Links

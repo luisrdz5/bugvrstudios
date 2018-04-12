@@ -18,7 +18,7 @@ class Home extends Component {
                     <Header 
                         links={this.props.data.links}
                     /> 
-                    <Body data={this.props.data.siteInformation} />
+                    <p> Aqui va el Portfolio </p>
                     <Footer data={this.props.data} />
                 </HomeContainer>
             </HandleError>
