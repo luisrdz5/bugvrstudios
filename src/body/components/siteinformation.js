@@ -3,7 +3,6 @@ import React from 'react'
 
 
 function SiteInformation(props){
-    console.log(props)
     return(
         <div className="row">
             {
