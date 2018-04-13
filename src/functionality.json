@@ -94,7 +94,13 @@
         "title": "Realidad Mixta",
         "information": "Es la combinación de Realidad Virtual y Realidad Aumentada. Por medio de dispositivos se tiene la sensación de estar en el mundo real interactuando con objetos o personas generadas por tecnologia."
       }
-
+    ],
+    "etiquetasBlog": [
+      {
+        "id":"1",
+        "etiquetaColaborar":"¿Deseas Comentar con Nosotros?",
+        "textoBoton": "Acceder"
+      }
 
     ]
 }
