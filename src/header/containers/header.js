@@ -1,27 +1,72 @@
 import React from 'react'
 import Logo from '../components/logo'
 import Links from '../components/links'
+import LinksBurgerMenu from '../components/linksburgermenu'
 import './header.css'
+import { slide as Menu } from 'react-burger-menu'
+
+
 
 
 function Header (props){
+    let links
     return (
         <nav className="orange darken-1" role="navigation">
-            <div className="nav-wrapper container ">
-                    <Logo />
-                    <ul className="right hide-on-med-and-down">
-                        {
-                            props.links.map((item) => {
-                                return (
-                                    <Links 
-                                        key={item.id} 
-                                        {...item} 
-                                    />   
-                                )
-                            })
-                        }
-                    </ul>
-                    <ul id="nav-mobile" className="side-nav">
+            <div className="hide-on-large-only">
+                <Menu 
+                    width={ 280 }
+                    //burgerButtonClassName={ "fa fa-user fa-2x" } 
+                    //customBurgerIcon={ <span className="fa fa-user fa-2x hide-on-large-only"></span>}
+                    burgerBarClassName={ "blue-grey darken-3 hide-on-large-only valign-wrapper" } 
+                    crossButtonClassName={ "blue-grey darken-3" } 
+                    menuClassName={ "blue-grey darken-3" } 
+                    morphShapeClassName={ "blue-grey darken-3" } 
+                    itemListClassName={ "blue-grey darken-3 waves-effect" } 
+
+                >
+                                {
+                                    props.links.map((item) => {
+                                        return (
+                                            <LinksBurgerMenu 
+                                                key={item.id} 
+                                                {...item}
+                                                className="blue-grey darken-3 bm-item-list" 
+                                            />   
+                                        )
+                                    })
+                                }
+
+                </Menu>
+            </div>
+                <div className="nav-wrapper container ">
+                        <Logo />
+                        <ul className="right hide-on-med-and-down">
+                            {
+                                props.links.map((item) => {
+                                    return (
+                                        <li>
+                                            <Links 
+                                            key={item.id} 
+                                            {...item} 
+                                            />
+                                        </li>   
+                                    )
+                                })
+                            }
+                        </ul>
+
+
+                </div>
+        </nav>
+
+    )
+}
+
+
+
+export default Header 
+
+                    {/* <ul id="nav-mobile" className="side-nav">
                         {
                             props.links.map((item) => {
                                 return (
@@ -37,14 +82,4 @@ function Header (props){
                         <i className="material-icons">
                             menu
                         </i>
-                    </a>
-
-            </div>
-        </nav>
-
-    )
-}
-
-
-
-export default Header 
+                    </a> */}

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Links(props){
     return (
-        <li> <Link to={props.link} >{props.description} </Link> </li>     
+         <Link to={props.link}  className= {props.className} >{props.description} </Link>    
     )
 }
 export default Links
