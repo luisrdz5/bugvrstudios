@@ -10,19 +10,17 @@ import { slide as Menu } from 'react-burger-menu'
 
 function Header (props){
     let links
+    let id = 0
     return (
         <nav className="orange darken-1" role="navigation">
             <div className="hide-on-large-only">
                 <Menu 
                     width={ 280 }
-                    //burgerButtonClassName={ "fa fa-user fa-2x" } 
-                    //customBurgerIcon={ <span className="fa fa-user fa-2x hide-on-large-only"></span>}
                     burgerBarClassName={ "blue-grey darken-3 hide-on-large-only valign-wrapper" } 
                     crossButtonClassName={ "blue-grey darken-3" } 
                     menuClassName={ "blue-grey darken-3" } 
                     morphShapeClassName={ "blue-grey darken-3" } 
                     itemListClassName={ "blue-grey darken-3 waves-effect" } 
-
                 >
                                 {
                                     props.links.map((item) => {
@@ -44,7 +42,7 @@ function Header (props){
                             {
                                 props.links.map((item) => {
                                     return (
-                                        <li>
+                                        <li key={++id}>
                                             <Links 
                                             key={item.id} 
                                             {...item} 

@@ -1,14 +1,20 @@
 import React from 'react'
 import { render } from 'react-dom'
 import Home from '../pages/containers/home'
-import Blog from '../pages/containers/blog'
-import Portafolio from '../pages/containers/portafolio'
-import About from '../pages/containers/about'
 import { HashRouter, BrowserRouter, Route, Switch, Router } from 'react-router-dom'
 import data from '../functionality.json'
+import * as firebase from 'firebase'
 
 const home = document.getElementById('home')
-
+var config = {
+    apiKey: "AIzaSyDQzs4ohwJNWr2vjePVtuphsi5sgSuNiNo",
+    authDomain: "bugvrstudio.firebaseapp.com",
+    databaseURL: "https://bugvrstudio.firebaseio.com",
+    projectId: "bugvrstudio",
+    storageBucket: "bugvrstudio.appspot.com",
+    messagingSenderId: "621054045661"
+  };
+  firebase.initializeApp(config);
 
 
 render((
@@ -20,15 +26,15 @@ render((
             />
             <Route 
                 path='/blog' 
-                render={(props) => <Blog {...props} data={data} />}
+                render={(props) => <Home {...props} data={data} Type={'Blog'} />}
             />
             <Route 
                 path='/portafolio' 
-                render={(props) => <Portafolio {...props} data={data} />}
+                render={(props) => <Home {...props} data={data} Type={'Portafolio'} />}
             />
             <Route 
                 path='/aboutus' 
-                render={(props) => <About {...props} data={data} />}
+                render={(props) => <Home {...props} data={data} Type={'About'}/>}
             />
         </Switch>
     </HashRouter>

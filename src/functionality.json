@@ -99,9 +99,38 @@
       {
         "id":"1",
         "etiquetaColaborar":"¿Deseas Comentar con Nosotros?",
-        "textoBoton": "Acceder"
+        "textoBoton": "Acceder",
+        "Bienvenida":"Bienvenido",
+        "textoBotonCerrarSesion":"Cerrar Sesión"
       }
 
-    ]
+    ],
+    "buttonsSocialNetworks":[{
+      "title": "Por Favor Selecciona una opción:",
+      "icons":[{
+        "id": 1,
+        "Texto": "Login con Facebook",
+        "FAIcon":"loginBtn loginBtn--facebook col s6 center",
+        "Type": "Facebook"
+      },
+      {
+        "id": 2,
+        "Texto": "Login con Google",
+        "FAIcon":"loginBtn loginBtn--google col s6 center",
+        "Type": "Google"
+      },
+      {
+        "id": 3,
+        "Texto": "Login con Twitter",
+        "FAIcon":"loginBtn loginBtn--twitter col s6 center",
+        "Type": "Twitter"
+      },
+      {
+        "id": 4,
+        "Texto": "Login con Correo Electronico",
+        "FAIcon":"loginBtn loginBtn--email col s6 center",
+        "Type": "Email"
+      }]
+    }]
 }
  
