@@ -44,26 +44,35 @@ class Home extends Component {
     
     handleAuth(type) {
        // event.preventDefault();
-
-
-
+        console.log(type)
         let provider 
-        switch(type){
-            case 'Facebook':
+        if (type =='Facebook'){
                 provider = new firebase.auth.FacebookAuthProvider();
-            case 'Google':
+                firebase.auth().signInWithPopup(provider)
+                .then((result) => {
+                    console.log(`${result.user} ha iniciado sesion`)
+                    })
+                .catch(error => console.log(`Error ${error.code}: ${error.message}`))
+        }
+        if (type =='Google'){
                 provider = new firebase.auth.GoogleAuthProvider();
-            case 'Twitter':
+                firebase.auth().signInWithPopup(provider)
+                .then((result) => {
+                    console.log(`${result.user} ha iniciado sesion`)
+                   })
+                .catch(error => console.log(`Error ${error.code}: ${error.message}`))
+        }
+        if (type=='Twitter'){
                 provider = new firebase.auth.TwitterAuthProvider();
-            case 'Email':
+                firebase.auth().signInWithPopup(provider)
+                .then((result) => {
+                    console.log(`${result.user} ha iniciado sesion`)
+                   })
+                .catch(error => console.log(`Error ${error.code}: ${error.message}`))
         }
         // const provider = new firebase.auth.GoogleAuthProvider()
 
-         firebase.auth().signInWithPopup(provider)
-         .then((result) => {
-             console.log(`${result.user} ha iniciado sesion`)
-            })
-         .catch(error => console.log(`Error ${error.code}: ${error.message}`))
+
     }
     handleLogout (){
         firebase.auth().signOut()

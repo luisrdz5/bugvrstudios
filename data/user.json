@@ -1,0 +1,25 @@
+{
+    "blogUsers":{
+        "Admins":{
+                    "id": 1,
+                    "name": "Luis Antonio Rodriguez Garcia",
+                    "permissions": "admin",
+                    "fecha_alta": "2017-05-03T12:53:23.457Z",
+                    "avatar": "https://pbs.twimg.com/profile_images/442983338/DSC00544_400x400.JPG"
+                },
+        "editors":{
+                    "id": 2,
+                    "name": "Pablo Larios Iwazaki",
+                    "permissions": "editor",
+                    "fecha_alta": "2017-05-03T12:53:23.457Z",
+                    "avatar": "https://pbs.twimg.com/media/DOJnfDqU8AAPKoi.jpg:large"
+                },
+        "All":{
+                    "id": 3,
+                    "name": "Chino",
+                    "permissions": "Anonimous",
+                    "fecha_alta": "2017-05-03T12:53:23.457Z",
+                    "avatar": "https://pbs.twimg.com/media/DOJnfDqU8AAPKoi.jpg:large"
+            }
+    }
+}

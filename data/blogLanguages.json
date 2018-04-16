@@ -1,0 +1,10 @@
+{
+    "blogLanguages":[{
+        "id": "ESP",
+        "info": "Español"
+    },
+    {
+        "id": "EN",
+        "info": "English"
+    }]
+}
