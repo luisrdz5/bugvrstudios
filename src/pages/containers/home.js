@@ -10,6 +10,7 @@ import LoginModal from '../../widgets/containers/loginmodal'
 import Modal from '../../widgets/components/modal'
 
 
+
 class Home extends Component {
         state = {
             user: null,
@@ -69,6 +70,7 @@ class Home extends Component {
         .then(result => console.log(`${result.user} ha cerrado Sesion`))
         .catch(error => console.log(`Error ${error.code}: ${error.message}`))
     }
+
     render (){
         switch(this.props.Type){
             case "Blog":
