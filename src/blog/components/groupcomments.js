@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import Spinner from './spinner';
 import * as firebase  from 'firebase'
+import moment from 'moment'
 
 
 class GroupComments extends  Component {
@@ -53,6 +54,10 @@ class GroupComments extends  Component {
             console.log("Procesamos Usuarios ......")
     }
         render() {
+            let hoy = Date.now() 
+            let fecha2 = moment(hoy);
+
+
              if(!this.state.commentLoading && this.state.users){
                 const api = this.state.comments
                 const results = api.filter((item) => {
@@ -72,8 +77,13 @@ class GroupComments extends  Component {
                                 <div key={++commentId} >
                                     <ul className="collection">
                                         <li className="collection-item avatar" key={item.id}>
-                                            <img src={resultuser[0].avatar} className="circle"/>
-                                            <span className="title">{item.user}</span>
+                                            <div className="row">
+                                                <img src={resultuser[0].avatar} className="circle"/>
+                                                <span className="valign-wrapper col s3">{item.user}</span>
+                                                <span className="valign-wrapper col s4 grey-text lighten-3"> { moment(item.date).startOf('day').fromNow() } 
+                                                </span>
+                                                
+                                            </div>
                                             <p> 
                                                 {item.text} <br />
                                                 <i className="small material-icons">thumb_up</i> {item.likes} 
