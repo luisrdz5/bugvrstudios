@@ -24,16 +24,48 @@ admin.initializeApp({
 
 // se insertan los comentarios
 
-    admin.firestore()
-    .collection('Blog').doc('blogComments')
-    .set(comments)
-    .then((res) => {
-        console.log("Se han insertado los comentarios !");
-        //console.log(nestedContent)
-    })
-    .catch((error) => {
-        console.error("Error writing document: ", error);
-    });
+
+comments && Object.keys(comments).forEach(key => {
+    const nestedContent = comments[key];
+
+    if (typeof nestedContent === "object") {
+        Object.keys(nestedContent).forEach(docTitle => {
+            admin.firestore()
+            //This is for Spanish functionality  collection('Functionality').doc('Esp')
+                .collection('Blog').doc('blogComments').collection('Comments')
+                .doc(docTitle)
+                .set(nestedContent[docTitle])
+                .then((res) => {
+                    console.log("Document successfully written!");
+                })
+                .catch((error) => {
+                    console.error("Error writing document: ", error);
+                });
+        });
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+    // admin.firestore()
+    // .collection('Blog').doc('blogComments')
+    // .set(comments)
+    // .then((res) => {
+    //     console.log("Se han insertado los comentarios !");
+    //     //console.log(nestedContent)
+    // })
+    // .catch((error) => {
+    //     console.error("Error writing document: ", error);
+    // });
 
     //se insertan los languages
     admin.firestore()

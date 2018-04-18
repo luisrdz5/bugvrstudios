@@ -4,7 +4,7 @@ import GroupComments from '../components/groupcomments'
 
 function BlogArticle(props){
     let commentId = 0
-
+    //console.log("props llega a blogarticle asi:",props)
     return (
         <div className="card">
             <span className="card-title">{props.title}</span>
@@ -18,7 +18,8 @@ function BlogArticle(props){
                 <div>
                     <GroupComments 
                         key={++commentId} 
-                        {...props} 
+                        {...props}
+                        obtainComments={props.obtainComments}
                     />
                 </div>
             </div>
