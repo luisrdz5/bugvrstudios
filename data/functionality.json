@@ -105,6 +105,71 @@
       }
 
     ],
+    "etiquetasPortafolio": [
+      {
+        "id":"1",
+        "Header":"Portafolio"
+      }
+
+    ],
+    "etiquetasAbout": [
+      {
+        "id":"1",
+        "Header":"Equipo"
+      }
+
+    ],
+    "team":[
+      {
+        "id": 1,
+        "name": "Luis Antonio Rodriguez Garcia",
+        "TextoPuesto": "Puesto:",
+        "Puesto": "Founder",
+        "Bio": "Programador por mas de 15 años desarollando en las mas nuevas tecnologias",
+        "fecha_alta": "2018-04-15 12:53:23",
+        "avatar": "https://firebasestorage.googleapis.com/v0/b/bugvrstudio.appspot.com/o/photo.jpg?alt=media&token=c0ea5e0a-ece5-4ea9-ac66-9563c7a3071b",
+        "segundoEncabezado":"Redes Sociales",
+        "redes":[
+          {
+            "id":"1",
+            "link":"https://www.facebook.com/LuisAntRodriguezGarcia/",
+            "text":"Facebook",
+            "classIcon": "white black-text fa fa-facebook-official fa-3"
+          },
+          {
+            "id":"2",
+            "link":"https://github.com/luisrdz5",
+            "text":"Github",
+            "classIcon": "white black-text fa fa-github fa-3"
+          },
+          {
+            "id":"3",
+            "link":"https://twitter.com/luis_rdz5",
+            "text":"Twitter",
+            "classIcon": "white black-text fa fa-twitter fa-3"
+          },
+          {
+            "id":"4",
+            "link":"https://www.instagram.com/th3_bu6/",
+            "text":"Instagram",
+            "classIcon": "white black-text fa fa-instagram fa-3"
+          },
+          {
+            "id":"5",
+            "link":"https://www.instagram.com/th3_bu6/",
+            "text":"Resume",
+            "classIcon": "white black-text fa fa-file fa-3"
+          },
+          {
+            "id":"6",
+            "link":"https://www.linkedin.com/in/luis-antonio-rodríguez-garcía-7ab584b5",
+            "text":"LinkedIn",
+            "classIcon": "white black-text fa fa-linkedin fa-3"
+          }
+          ]            
+      }],
+
+
     "buttonsSocialNetworks":[{
       "title": "Por Favor Selecciona una opción:",
       "icons":[{

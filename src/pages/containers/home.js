@@ -8,6 +8,8 @@ import BlogContent from '../../blog/containers/blogContent'
 import firebase from 'firebase'
 import LoginModal from '../../widgets/containers/loginmodal'
 import Modal from '../../widgets/components/modal'
+import About from '../../about/containers/about'
+import Portafolio from '../../portafolio/containers/portafolio'
 
 
 
@@ -116,7 +118,9 @@ class Home extends Component {
                             <Header 
                                 links={this.props.data.links}
                             /> 
-                            <p> Aqui va el Portfolio </p>
+                            <Portafolio 
+                               data={this.props.data.etiquetasPortafolio[0]}
+                            />
                             <Footer data={this.props.data} />
                         </HomeContainer>
                     </HandleError>
@@ -128,7 +132,10 @@ class Home extends Component {
                             <Header 
                                 links={this.props.data.links}
                             /> 
-                            <p> Aqui va el about </p>
+                            <About 
+                                data={this.props.data.etiquetasAbout[0]} 
+                                team={this.props.data.team[0]}
+                            />
                             <Footer data={this.props.data} />
                         </HomeContainer>
                     </HandleError>
